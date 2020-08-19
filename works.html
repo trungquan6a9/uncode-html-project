@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Classic Film - Uncode</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <!--swipe js-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+    <body class="works_body">
+        <!--Header-->
+        <div class="header">
+            <div class="header_left">
+                <div>U</div>
+            </div>
+
+            <div class="header_center">
+                <div>WELCOME</div>
+                <div>ABOUT US</div>
+                <div>WORKS</div>
+                <div>CLIENTS</div>
+                <div>NEWS</div>
+                <div>CONTACT</div>
+            </div>
+
+            <div class="header_right">
+                <span>Facebook <i class="fa-facebook"></i></span>
+                <span>Twitter</span>
+                <span>Dribbble</span>
+            </div>
+        </div>
+        <!--End of Header-->
+        <!--Contents-->
+        <div class="contents_works">
+            <h3>Works</h3>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                        <img src="Works/u6.jpg" class="swiper-lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Works/u1.jpg" class="swiper-lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Works/u2.jpg" class="swiper-lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Works/u3.jpg" class="swiper-lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Works/u4.jpg" class="swiper-lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Works/u5.jpg" class="swiper-lazy">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--End of Contents-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                lazy: true,
+                loop: true,
+                spaceBetween: 70,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>
