@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Classic Film - Uncode</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="home.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+    <body class="news_body">
+        <!--Header-->
+        <div class="header">
+            <div class="header_left">
+                <div>U</div>
+            </div>
+
+            <div class="header_center">
+                <div>WELCOME</div>
+                <div>ABOUT US</div>
+                <div>WORKS</div>
+                <div>CLIENTS</div>
+                <div>NEWS</div>
+                <div>CONTACT</div>
+            </div>
+
+            <div class="header_right">
+                <span>Facebook <i class="fa-facebook"></i></span>
+                <span>Twitter</span>
+                <span>Dribbble</span>
+            </div>
+        </div>
+        <!--End of Header-->
+        <!--Contents-->
+        <div class="contents_news">
+            <div class="contents_title">
+                Lastest News
+            </div>
+            <div class="news_posts">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="images">
+                                <img src="News/n1.jpg">
+                            </div>
+                            <div class="infomation">
+                                <p>March 25, 2017</p>
+                                <h3>Be productive at work</h3>
+                                <div class="interactions">
+                                    <p>3 Comment, 4 Minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images">
+                                <img src="News/n2.jpg">
+                            </div>
+                            <div class="infomation">
+                                <p>March 22, 2017<p/>
+                                <h3>Start With JavaScript</h3>
+                                <div class="interactions">
+                                    <p>3 Comment, 12 Minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="images">
+                                <img src="News/n3.jpg">
+                            </div>
+                            <div class="infomation">
+                                <p>March 20, 2017<p/>
+                                <h3>Designing Experiences</h3>
+                                <div class="interactions">
+                                    <p>3 comment, 5 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="more_news_button" class="button">
+                <a href="#" class="button_title">MORE NEWS</a>
+            </div>
+        </div>
+        <!--End of Contents-->
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            });
+        </script>
+    </body>
+</html>

@@ -7,16 +7,50 @@ and open the template in the editor.
     Created on : Aug 11, 2020, 10:16:54 PM
     Author     : johny
 */
-/*--------------------------- Welcome ----------------------------------------*/
-.welcome_body{
-    overflow: hidden;
-    box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, #085cd0, #b012c7);
-    background-size: 101% 1050px;
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
+
+.contents_title{
+    font-family: 'Quicksand';
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
 }
+.button_title{
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+.button{
+    width: 150px;
+    height: 44px;
+    display: inline-block;
+    margin-top: 14px;
+    border-radius: 2px;
+}
+.button a:link, a:visited{
+    display: block;
+    padding-top: 8%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.h1_custom{
+    width: 50%;
+    margin: auto;
+    font-size: 75px;
+    line-height: 90px;
+}
+
+.p_custom{
+    width: 41%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 2%;
+    line-height: 30px;
+}
+/*--------------------------- Movie Frame ----------------------------------------*/
 .movie_frame{
     float: left;
     width: 100%;
@@ -59,43 +93,36 @@ and open the template in the editor.
     float: left;
     text-align: right;
 }
-/*------------------------------ Contentes ----------------------------------*/
+/*------------------------------ Welcome ----------------------------------*/
+.welcome_body{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #085cd0, #b012c7);
+    background-size: 101% 1050px;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
 .contents_welcome{
     font-family: 'Quicksand';
     text-align: center;
-    padding-top: 14%;
+    padding-top: 16%;
     color: white;
+    width: 100%;
 }
-h1{
-    font-size: 75px;
-}
-.contents p{
-    font-size: 20px;
-}
+
+/*--------------------*/
 #buy_button{
-    width: 150px;
-    height: 44px;
-    font-family: 'Poppins';
-    display: inline-block;
-    margin-top: 14px;
+    border: 1px solid white;
+    margin-top: 2%;
 }
 #buy_button a:link, a:visited{
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 12px 32px 12px 35px;
-    display: inline-block;
     color: white;
-    border: 1px solid white;
-    transition: 0.2s ease;
 }
-#buy_button:hover{
-}
-#buy_button a:hover{
+#buy_button:hover a{
     background: white;
     color: black;
 }
-
 /*------------------------------ About us ----------------------------------*/
 .aboutUs_body{
     overflow: hidden;
@@ -142,15 +169,12 @@ h1{
     box-sizing: border-box;
     background:black;
     color: white;
-    font-family: 'Quicksand';
     text-align: center;
 }
 .contents_works{
     width: 100%;
-    height: 500px;
+    height: 550px;
     padding-top: 80px;
-    font-size: 35px;
-    font-weight: 400;
 }
 .contents_works .swiper-container {
     width: 150%;
@@ -214,39 +238,132 @@ h1{
 }
 .contents_clients .swiper-container {
     width: 60%;
-    overflow: hidden;
-    box-sizing: border-box;
+    background: black;
 }
 .contents_clients .swiper-slide {
+    overflow: hidden;
+    box-sizing: border-box;
     text-align: center;
-    /* Center slide text vertically */
-/*    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;*/
-    align-items: center;
     width: 100%;
     height: 300px;
-
     font-size: 24px;
-    font-weight: 400;
-    background: gray;
+    padding-top: 6%;
+}
+.contents_clients .swiper-slide p{
+    width: 75%;
+    margin: auto;
 }
 
 .contents_clients .swiper-slide span{
     font-size: 14px;
+    line-height: 70px;
 }
-.contents_clients .swiper-slide:nth-child(2n) {
+
+/*------------------------------ News ----------------------------------*/
+.news_body{
+    background: #f7f7f7;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+.contents_news{
+    width: 100%;
+    padding-top: 11%;
+}
+.news_body contents_title{
+    width: 100%;
+    float: left;
+}
+.news_posts{
+    width: 100%;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+.news_posts .swiper-container {
+    width: 60%;
+    height: auto;
+    padding: 50px;
+}
+
+.news_posts .swiper-slide {
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 10px 50px #afafaf;
+    font-family: 'Quicksand';
+    color: #777;
+}
+
+.news_posts .images{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.news_posts .images img{
+    width: 100%;
+}
+.news_posts .infomation{
+    padding: 15px;
+}
+.news_posts .interactions{
+    border-top: 0.1px solid #e6e6e6;
+}
+
+#more_news_button{
+    margin-top: 5%;
+    background: #6442ff;
+}
+#more_news_button a:link, a:visited{
+    color: white;
+}
+#more_news_button:hover a{
+    background: white;
+    color: #6442ff;
+    border: 1px solid #6442ff;
+}
+/*------------------------------ Contact ----------------------------------*/
+.contact_body{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #085cd0, #b012c7);
+    background-size: 101% 1050px;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+.contents_contact{
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 16%;
+    color: white;
     width: 100%;
 }
 
-.contents_clients .swiper-slide:nth-child(3n) {
+#contactus_button{
+    border: 1px solid white;
+    margin-top: 3%;
+}
+#contactus_button a:link, a:visited{
+    color: white;
+}
+#contactus_button:hover a{
+    background: white;
+    color: black;
+}
+/*-------------------------- footer ---------------------------------------*/
+.footer{
     width: 100%;
+    height: 250px;
+    float: left;
+    padding: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 250px;
 }
