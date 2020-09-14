@@ -12,97 +12,143 @@ and open the template in the editor.
         <script src="https://kit.fontawesome.com/47ba689f9c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="home.css">
     </head>
-    <body class="welcome_body">
-        <div class="background"></div>
-        <!--        <video autoplay="" muted="" loop="">
+    <body>
+        <div class="welcome_body">
+            <div class="background">
+                <video autoplay="" loop="" muted="">
                     <source src="Background/Videos/welcome_vid.mp4" type="video/mp4"/>
-                </video>-->
-        <div class="background">
-            <video autoplay="" loop="" muted="">
-                <source src="Background/Videos/welcome_vid.mp4" type="video/mp4"/>
-            </video>
-        </div>
-        <div class="sub_background"></div>
-        <!--Movie frame-->
-        <!--        <div class="movie_frame">
-                    <div class="movie_frame_top">
+                </video>
+            </div>
+            <div class="sub_background"></div>
+            <!--Movie frame-->
+            <div class="movie_frame">
+                <div class="movie_frame_top">
+                </div>
+                <div class="movie_frame_right">
+                </div>
+                <div class="movie_frame_bottom">
+                </div>
+                <div class="movie_frame_left">
+                </div>
+            </div>
+            <!--Merge content-->
+            <div class="merge_content">
+                <!--Quich Option-->
+                <div id="quick_option_toolbar">
+                    <input type="button" value="Purchase Uncode"/>
+                    <p>Latest Update</p>
+                    <div id="pic"><img src="Merge_content/banner-frontend-editor-min-300x201.jpg"/></div>
+                </div>
+                <a href="#" onclick="openToolbar()">
+                    <div class="description_merge_content">Quick Options</div>
+                    <i class="fa fa-cog"></i>
+                </a>
+                <!--Presale Chat-->
+                <a href="#">
+                    <div class="description_merge_content">Presale Chat</div>
+                    <i class="far fa-comment-alt"></i>
+                </a>
+                <!--Showcase-->
+                <a href="#">
+                    <div class="description_merge_content">Showcase</div>
+                    <i class="far fa-heart"></i>
+                </a>
+                <!--Promo Video-->
+                <a href="#">
+                    <div class="description_merge_content">Promo Video</div>
+                    <i class="fas fa-desktop"></i>
+                </a>
+                <!--Wireframes-->
+                <a href="#">
+                    <div class="description_merge_content">Wireframes</div>
+                    <i class="fas fa-th-large"></i>
+                </a>
+                <!--Documentation-->
+                <a href="#">
+                    <div class="description_merge_content">Documentation</div>
+                    <i class="far fa-folder"></i>
+                </a>
+                <!--Video Tutorials-->
+                <a href="#">
+                    <div class="description_merge_content">Video Tutorials</div>
+                    <i class="far fa-play-circle"></i>
+                </a>
+            </div>
+            <!--End of merge content-->
+            <!--Header-->
+            <div class="header">
+                <div class="header_left">
+                    <div class="icon">
+                        <span>
+                            U
+                        </span>
                     </div>
-                    
-                </div>-->
-        <!--Merge content-->
-        <div class="merge_content">
-            <!--Quich Option-->
-            <i class="fa fa-cog"></i>
-            <!--Presale Chat-->
-            <i class="far fa-comment-alt"></i>
-            <!--Showcase-->
-            <i class="far fa-heart"></i>
-            <!--Promo Video-->
-            <i class="fas fa-desktop"></i>
-            <!--Wireframes-->
-            <i class="fas fa-th-large"></i>
-            <!--Documentation-->
-            <i class="far fa-folder"></i>
-            <!--Video Tutorials-->
-            <i class="far fa-play-circle"></i>
-        </div>
-        <!--End of merge content-->
-        <!--Header-->
-        <div class="header">
-            <div class="header_left">
-                <div class="icon">
-                    <span>U</span>
+                </div>
+                <div class="header_center">
+                    <div>
+                        <a href="welcome.html">WELCOME</a>
+                    </div>
+                    <div>
+                        <a href="aboutUs.html">ABOUT US</a>
+                    </div>
+                    <div>
+                        <a href="works.html">WORKS</a>
+                    </div>
+                    <div>
+                        <a href="clients.html">CLIENTS</a>
+                    </div>
+                    <div>
+                        <a href="news.html">NEWS</a>
+                    </div>
+                    <div>
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <a href="https://www.facebook.com/undsgn">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/undsgndotcom">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
                 </div>
             </div>
+            <!--End of Header-->
+            <!--Contents-->
+            <div class="contents_welcome">
+                <h1 class="h1_custom">
+                    Create amazing designs
+                    with Uncode Theme
+                </h1>
+                <p class="p_custom">
+                    With dedication and knowledge we develop awesome software and digital web
+                    interactions for funded startups and established companies.
+                </p>
+                <div id="buy_button" class="button">
+                    <a href="#" class="button_title">BUY UNCODE</a>
+                </div>
+            </div>
+            <!--End of Contents-->
+        </div>
+        <script>
+            var isOpened = 0;
+            function openToolbar() {
+                if (isOpened === 0) {
+                    document.querySelector("#quick_option_toolbar").style.right = "0";
+                    document.querySelector(".merge_content").style.right = "20%";
+                    document.querySelector(".description_merge_content").style.right = "22.5%";
+                    isOpened = 1;
 
-            <div class="header_center">
-                <div>
-                    <a href="welcome.html">WELCOME</a>
-                </div>
-                <div>
-                    <a href="aboutUs.html">ABOUT US</a>
-                </div>
-                <div>
-                    <a href="works.html">WORKS</a>
-                </div>
-                <div>
-                    <a href="clients.html">CLIENTS</a>
-                </div>
-                <div>
-                    <a href="news.html">NEWS</a>
-                </div>
-                <div>
-                    <a href="contact.html">CONTACT</a>
-                </div>
-            </div>
-
-            <div class="header_right">
-                <a href="https://www.facebook.com/undsgn">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/undsgndotcom">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://dribbble.com">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-            </div>
-        </div>
-        <!--End of Header-->
-        <!--Contents-->
-        <div class="contents_welcome">
-            <h1 class="h1_custom">
-                Create amazing designs
-                with Uncode Theme
-            </h1>
-            <p class="p_custom">
-                With dedication and knowledge we develop awesome software and digital web
-                interactions for funded startups and established companies.
-            </p>
-            <div id="buy_button" class="button">
-                <a href="#" class="button_title">BUY UNCODE</a>
-            </div>
-        </div>
-        <!--End of Contents-->
+                } else {
+                    document.querySelector("#quick_option_toolbar").style.right = "-20%";
+                    document.querySelector(".merge_content").style.right = "0";
+                    document.querySelector(".description_merge_content").style.right = "2.5%";
+                    isOpened = 0;
+                }
+            }
+        </script>
     </body>
 </html>
